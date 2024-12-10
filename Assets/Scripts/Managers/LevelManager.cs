@@ -52,6 +52,8 @@ namespace Managers
 
         #endregion
 
+        #region Methods
+
         private void InitCommands()
         {
             _levelDestroyerCommand = new OnLevelDestroyerCommand(levelHolder);
@@ -67,6 +69,8 @@ namespace Managers
         {
             return (byte)_currentLevel; //To-Do Implement EasySave
         }
+
+        #endregion
 
         #region Events
 
