@@ -1,19 +1,20 @@
-﻿using Sirenix.OdinInspector;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Commands.Level
 {
     public class OnLevelLoaderCommand
     {
         private Transform _levelHolder;
+
         public OnLevelLoaderCommand(Transform levelHolder)
         {
             _levelHolder = levelHolder;
         }
-        [Button]
+
         public void Execute(byte levelIndex)
         {
-            Object.Instantiate(Resources.Load<GameObject>($"Prefabs/LevelPrefabs/Level-{levelIndex}"));
+            Object.Instantiate(Resources.Load<GameObject>($"Prefabs/LevelPrefabs/Level-{levelIndex}"), _levelHolder,
+                true);
         }
     }
 }
