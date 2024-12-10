@@ -6,10 +6,12 @@ namespace Signals
 {
     public class InputSignals : MonoBehaviour
     {
+        public UnityAction<HorizontalInputParams> onInputDragged = delegate { };
         public UnityAction onFirstTimeTouchTaken = delegate { };
         public UnityAction onInputTaken = delegate { };
         public UnityAction onInputReleased = delegate { };
-        public UnityAction<HorizontalInputParams> onInputDragged = delegate { };
+        public UnityAction onEnableInput = delegate { };
+        public UnityAction onDisableInput = delegate { };
         #region Singelton
 
         public static InputSignals Instance;
