@@ -1,11 +1,11 @@
-﻿using UnityEngine;
-using Data.UnityObjects;
-using Data.ValueObjects;
-using Commands.Level;
-using Signals;
+﻿using Runtime.Commands.Level;
+using Runtime.Data.UnityObjects;
+using Runtime.Data.ValueObjects;
+using Runtime.Signals;
 using Sirenix.OdinInspector;
+using UnityEngine;
 
-namespace Managers
+namespace Runtime.Managers
 {
     public class LevelManager : MonoBehaviour
     {

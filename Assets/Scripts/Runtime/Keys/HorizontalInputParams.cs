@@ -1,4 +1,4 @@
-﻿namespace Keys
+﻿namespace Runtime.Keys
 {
     public struct HorizontalInputParams
     {
